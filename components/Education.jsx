@@ -16,7 +16,7 @@ export default function Education() {
             scale: 1,
           }}
           transition={{ duration: 1, type: "spring" }}
-          className="w-full h-[20%] lg:text-[50px] text-blue-600 font-bold tracking-wider flex justify-center items-center"
+          className="w-full h-[20%] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] text-blue-600 font-bold tracking-wider flex justify-center items-center"
         >
           Academic Degrees
         </motion.div>

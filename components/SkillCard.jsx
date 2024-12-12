@@ -5,7 +5,7 @@ import colors from "@/app/colors/colors";
 export default function SkillCard({ img, title, des }) {
   return (
     <div
-      className={`border-[1px] 2xl:h-[250px] md:h-[200px] 2xl:w-[31%] md:w-[48%] m-[1%] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} overflow-hidden relative float-left rounded-lg`}
+      className={`border-[1px] h-[180px] 2xl:h-[250px] md:h-[200px] 2xl:w-[31%] md:w-[48%] m-[1%] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} overflow-hidden relative float-left rounded-lg`}
     >
       <div className="h-[100%] w-[40%] float-left relative flex justify-center items-center">
         <div className="w-[60%] h-[60%] relative">

@@ -25,7 +25,7 @@ export default function HomeContactCard({
         setHide((prev) => !prev);
         setIndex(ownIdx);
       }}
-      className={`w-[15%] h-[60%] relative ml-[2%] mr-[2%] border-[1px] rounded-lg ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard}`}
+      className={`sm:w-[15%] sm:h-[60%] h-[100px] w-[25%] relative ml-[2%] mr-[2%] border-[1px] rounded-lg ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard}`}
     >
       <Link legacyBehavior href={livelink} passHref>
         <a target="_blank">
@@ -38,14 +38,14 @@ export default function HomeContactCard({
             }}
             className={`h-[20%] w-[160%] ${
               hide ? "opacity-0" : "opacity-100"
-            }  ml-[-30%] border-[1px] text-[16px] hover:underline border-slate-800 text-slate-200 p-2 flex justify-center items-center rounded-lg bg-gray-950 hover:text-blue-400 z-30 mt-[-30%]`}
+            }  ml-[-30%] border-[1px] text-[8.1px] sm:text-[11px] lg:text-[16px] hover:underline border-slate-800 text-slate-200 p-2 flex justify-center items-center rounded-lg bg-gray-950 hover:text-blue-400 z-30 mt-[-30%]`}
           >
             {text}
           </motion.div>
         </a>
       </Link>
 
-      <div className=" w-[60%] h-[100%] mt-[6%] ml-[20%] relative overflow-hidden flex justify-center p-[20%] items-center">
+      <div className="w-[60%] sm:h-[100%] h-[60%] mt-[30%] sm:mt-[6%] ml-[20%] relative overflow-hidden flex justify-center p-[20%] items-center">
         <Image
           src={img}
           alt="Descriptive alt text"

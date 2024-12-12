@@ -26,7 +26,7 @@ export default function HomeContact() {
         <Link href="/contact">
           <>
             <div
-              className="z-10 w-full float-left h-full flex relative justify-center items-center lg:text-[60px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]"
+              className="z-10 w-full float-left h-full flex relative justify-center items-center text-[25px] sm:text-[35px] md:text-[45px] lg:text-[60px] xl:text-[65px] 2xl:text-[70px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]"
             >
               CONTACT
             </div>

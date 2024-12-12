@@ -68,7 +68,7 @@ export default function ContactForm() {
             setEmail(e.target.value);
           }}
           placeholder="Your Email"
-          className={`w-[60%] h-[60%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
+          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
             initial
               ? "border-[#888888] focus:border-blue-600"
               : sendableEmail
@@ -84,7 +84,7 @@ export default function ContactForm() {
             setSubject(e.target.value);
           }}
           placeholder="Subject"
-          className={`w-[60%] h-[60%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
+          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
             initial
               ? "border-[#888888] focus:border-blue-600"
               : sendableSubject
@@ -100,7 +100,7 @@ export default function ContactForm() {
             setText(e.target.value);
           }}
           placeholder="Feel free to text me"
-          className={`w-[62%] h-full placeholder:text-[#666666] bg-[#cccccc] rounded-lg border-[2px] resize-none text-black p-[10px] focus:outline-none  ${
+          className={`w-[83%] h-[100%] placeholder:text-[#666666] bg-[#cccccc] rounded-lg border-[2px] resize-none text-black p-[10px] focus:outline-none  ${
             initial
               ? "border-[#888888] focus:border-blue-600"
               : sendableText
@@ -112,7 +112,7 @@ export default function ContactForm() {
       <div className="w-full h-[20%] flex justify-center items-center">
         <button
           onClick={handleSubmit}
-          className="w-[100px] h-[50%] bg-blue-600 rounded-lg font-bold text-[20px] text-slate-200 tracking-wider"
+          className={`w-[100px] h-[50%] mb-[3%] ${sendableEmail ? sendableSubject ? sendableText ? "bg-green-700" : "bg-zinc-800" : "bg-zinc-800" : "bg-zinc-800" } rounded-lg font-bold sm:text-[15px] lg:text-[20px] text-slate-200 tracking-wider`}
         >
           SEND
         </button>

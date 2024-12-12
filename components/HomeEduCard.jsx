@@ -9,10 +9,10 @@ export default function HomeEduCard({ img, degree, uni, year }) {
       initial={{ scale: 1 }}
       whileHover={{ scale: 0.98 }}
       transition={{ type: "spring", duration: 0.2 }}
-      className={`border-[1px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} overflow-hidden p-[1%] h-full relative w-[28.4%] mr-[2.5%] ml-[2.5%] float-left rounded-2xl`}
+      className={`border-[1px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} overflow-hidden p-[1%] h-[300px] sm:h-full relative w-[95%] sm:w-[28.4%] mr-[2.5%] ml-[2.5%] float-left rounded-2xl`}
     >
       <Link href="/education">
-        <div className="h-[40%] w-full float-left mt-[10%] relative">
+        <div className="h-[100px] sm:h-[20%] md:h-[40%] w-full float-left mt-[10%] relative">
           <Image
             src={img}
             alt="Descriptive alt text"

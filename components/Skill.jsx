@@ -21,7 +21,7 @@ export default function Skill() {
             scale: 1,
           }}
           transition={{ duration: 1, type: "spring" }}
-          className="w-full h-[20%] lg:text-[50px] font-bold text-blue-600 tracking-wider flex justify-center items-center"
+          className="w-full h-[20%] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] font-bold text-blue-600 tracking-wider flex justify-center items-center"
         >
           Learned Skills
         </motion.div>

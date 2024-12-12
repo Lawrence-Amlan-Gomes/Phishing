@@ -23,14 +23,14 @@ export default function HomeEducation() {
       <div className="w-full h-[30%] relative">
         <Link href="/education">
           <div
-            className="z-10 w-full float-left h-full flex relative justify-center items-center lg:text-[60px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]"
+            className="z-10 w-full float-left h-full flex relative justify-center items-center text-[25px] sm:text-[35px] md:text-[45px] lg:text-[60px] xl:text-[65px] 2xl:text-[70px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]"
           >
             EDUCATION
           </div>{" "}
         </Link>
       </div>
       <div
-        className="w-full h-[70%] relative overflow-hidden flex [&>div]:flex-shrink-0 pb-[5%] pl-[2.5%] pr-[2.5%]"
+        className="w-full sm:h-[70%] relative sm:overflow-hidden overflow-auto flex [&>div]:flex-shrink-0 pb-[5%] pl-[2.5%] pr-[2.5%] sm:text-[11px] md:text-[15px] lg:text-[20px]"
       >
         <HomeEduCard
           img={Bracu}

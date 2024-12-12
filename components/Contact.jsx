@@ -19,7 +19,7 @@ export default function Contact() {
             scale: 1,
           }}
           transition={{ duration: 1, type: "spring" }}
-          className="w-full h-[20%] lg:text-[50px] font-bold text-blue-600 tracking-wider flex justify-center items-center"
+          className="w-full h-[20%] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] font-bold text-blue-600 tracking-wider flex justify-center items-center"
         >
           Get In Touch
         </motion.div>
@@ -30,17 +30,14 @@ export default function Contact() {
             y: 0,
             transition: { duration: 0.5 },
           }}
-          className="w-full h-[70%] relative overflow-y-auto scrollbar-none"
+          className="w-full h-[70%] relative overflow-y-auto scrollbar-none flex justify-center items-center"
         >
           <motion.div
             initial={{ scale: 1 }}
-            whileHover={{ scale: 1.01 }}
+            whileHover={{ scale: 1 }}
             transition={{ duration: 1, type: "spring" }}
-            className={`h-[90%] m-[2%] w-[37%] float-left border-[1px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} rounded-xl`}
+            className={`h-[90%] m-[2%] w-[10%] float-left border-[1px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} rounded-xl`}
           >
-            <div className={`w-full tracking-wider text-white h-[20%] flex justify-center items-center text-center font-bold lg:text-[20px]`}>
-              Single Click To Visit
-            </div>
             <div className="w-[80%] ml-[10%] h-[80%]">
               <ContactCard img={Gmail} livelink={"https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftLmbMDDfmnMzMrFdjCZjvzPgpPhCSkXwkJSljNbNGzttgqJKwpZQqHGFrWBqzlXxjTNV"}/>
               <ContactCard img={GitHub} livelink={"https://github.com/Lawrence-Amlan-Gomes"}/>
@@ -49,11 +46,11 @@ export default function Contact() {
           </motion.div>
           <motion.div
             initial={{ scale: 1 }}
-            whileHover={{ scale: 1.01 }}
+            whileHover={{ scale: 1 }}
             transition={{ duration: 1, type: "spring" }}
-            className={`h-[90%] m-[2%] w-[55%] float-left border-[1px] relative rounded-xl ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard}`}
+            className={`h-[90%] m-[2%] w-[40%] float-left border-[1px] relative rounded-xl ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard}`}
           >
-            <div className="w-full tracking-wider text-white h-[20%] flex justify-center items-center text-center font-bold lg:text-[20px]">
+            <div className="w-full tracking-wider text-white h-[20%] pt-[1%] flex justify-center items-center text-center font-bold lg:text-[23px]">
               Send Me Direct Mail
             </div>
             <ContactForm/>

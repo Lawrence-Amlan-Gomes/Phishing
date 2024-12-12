@@ -18,13 +18,13 @@ export default function About() {
         scale: 1,
       }}
       transition={{ duration: 1, type: "spring" }}
-      className="w-full h-full overflow-y-auto overflow-x-hidden"
+      className="w-full sm:h-[100%] h-[80%] overflow-y-auto overflow-x-hidden"
     >
-      <div className="w-full h-[20%] font-bold lg:text-[50px] text-blue-600 tracking-wider flex justify-center items-center">
+      <div className="w-full h-[20%] font-bold text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] text-blue-600 tracking-wider flex justify-center items-center">
         Know Me More
       </div>
       <div className="w-full h-[70%] p-[1%]">
-        <div className={`h-[100%] w-[30%] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} relative border-[1px] overflow-hidden rounded-3xl float-left`}>
+        <div className={`sm:h-[100%] sm:w-[30%] w-[96%] ml-2 mr-2 sm:ml-0 sm:mr-0 h-[350px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} relative border-[1px] overflow-hidden rounded-3xl float-left`}>
           <Image
             src={Pic}
             alt="Descriptive alt text"
@@ -34,7 +34,7 @@ export default function About() {
             objectPosition="top"
           />
         </div>
-        <div className="h-[100%] w-[70%] relative overflow-y-auto float-left scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
+        <div className="h-[100%] sm:w-[70%] w-full relative overflow-y-auto float-left scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
           <AboutCard
             img={Person}
             text={

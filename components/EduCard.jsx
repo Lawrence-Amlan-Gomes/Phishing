@@ -9,9 +9,9 @@ export default function EduCard({ img, degree, uni, year, des, livelink }) {
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.01 }}
       transition={{ type: "spring", duration: 0.2 }}
-      className={`${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} border-[1px] h-[80%] w-[90%] ml-[5%] mr-[5%] mt-[4%] mb-[4%] overflow-hidden relative float-left rounded-2xl`}
+      className={`${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} border-[1px] h-[80%] w-[90%] 2xl:w-[46%] ml-[5%] mr-[5%] 2xl:ml-[2%] 2xl:mr-[2%] mt-[4%] mb-[4%] overflow-hidden relative float-left rounded-2xl sm:text-[10px] md:text-[15px] lg:text-[20px]`}
     >
-      <div className="h-[100%] w-[40%] float-left flex justify-center items-center">
+      <div className="h-[100%] sm:w-[30%] md:w-[40%] float-left flex justify-center items-center">
         <div className="h-[50%] w-[50%] overflow-hidden rounded-lg relative">
           <Link legacyBehavior href={livelink} passHref>
             <a target="_blank">
@@ -25,7 +25,7 @@ export default function EduCard({ img, degree, uni, year, des, livelink }) {
           </Link>
         </div>
       </div>
-      <div className="h-[100%] w-[60%] float-left flex justify-center items-center">
+      <div className="h-[100%] sm:w-[70%] md:w-[60%] float-left flex justify-center items-center">
         <div className="w-[90%] mr-[10%] overflow-hidden relative">
           <div className="tracking-wide text-center text-blue-500 font-bold lg:text-[20px]">
             {degree}

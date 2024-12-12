@@ -9,7 +9,7 @@ import HomeContact from "./HomeContact";
 import Footer from "./Footer";
 export default function Home() {
   return (
-    <div className="h-[90%] w-full justify-center relative overflow-hidden">
+    <div className="sm:h-[90%] h-[80%] w-full justify-center relative overflow-hidden">
       {/* <Image
         src={Back}
         alt="Descriptive alt text"

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import colors from "@/app/colors/colors";
 export default function SingleProject({ pic, title, text, livelink }) {
   return (
-    <div className={`border-[1px] w-[48%] h-[96%] m-[1%] float-left relative ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} rounded-xl`}>
+    <div className={`border-[1px] w-[98%] md:w-[48%] h-[96%] m-[1%] float-left relative ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} rounded-xl`}>
       <div className="md:text-[25px] text-slate-200 w-full text-center tracking-wide font-bold h-[20%] flex justify-center items-center">
         {title}
       </div>
