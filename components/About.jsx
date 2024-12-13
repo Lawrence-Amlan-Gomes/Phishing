@@ -23,8 +23,8 @@ export default function About() {
       <div className="w-full h-[20%] font-bold text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] text-blue-600 tracking-wider flex justify-center items-center">
         Know Me More
       </div>
-      <div className="w-full h-[70%] p-[1%]">
-        <div className={`sm:h-[100%] sm:w-[30%] w-[96%] ml-2 mr-2 sm:ml-0 sm:mr-0 h-[350px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} relative border-[1px] overflow-hidden rounded-3xl float-left`}>
+      <div className="w-full sm:h-[70%] h-[80%] p-[1%]">
+        <div className={`sm:h-[100%] sm:w-[30%] w-0 h-0 opacity-0 sm:opacity-100 sm:ml-0 sm:mr-0  ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} relative border-[1px] overflow-hidden rounded-3xl float-left`}>
           <Image
             src={Pic}
             alt="Descriptive alt text"
@@ -34,9 +34,35 @@ export default function About() {
             objectPosition="top"
           />
         </div>
-        <div className="h-[100%] sm:w-[70%] w-full relative overflow-y-auto float-left scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
+        <div className="sm:h-[100%] sm:w-[70%] sm:opacity-100 opacity-0 w-0 h-0 relative overflow-y-auto float-left scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
           <AboutCard
             img={Person}
+            text={
+              "Hi, I am Lawrence Amlan Gomes, a full time full stack Next JS Web Developer having an experience of more than one year."
+            }
+          />
+          <AboutCard
+            img={Communication}
+            text={
+              "I Always prioritize client collaboration and fostering open communication so that my clients can get maximun benefit."
+            }
+          />
+          <AboutCard
+            img={TimeZone}
+            text={
+              "I am very flexible with time zone communications so that my clients can communicate with me at any time and from anywhere."
+            }
+          />
+          <AboutCard
+            img={Coder}
+            text={
+              "I am a tech enthusiast with a passion for web development, and I always enjoy the journey of learning new technology."
+            }
+          />
+        </div>
+        <div className="h-[100%] w-full opacity-100 sm:w-0 sm:h-0 sm:opacity-0 relative overflow-y-auto float-left scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
+          <AboutCard
+            img={Pic}
             text={
               "Hi, I am Lawrence Amlan Gomes, a full time full stack Next JS Web Developer having an experience of more than one year."
             }

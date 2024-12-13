@@ -68,7 +68,7 @@ export default function ContactForm() {
             setEmail(e.target.value);
           }}
           placeholder="Your Email"
-          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
+          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] text-[14px] sm:text-[18px] lg:text-[23px] border-2 box-border rounded-md text-black focus:outline-none ${
             initial
               ? "border-[#888888] focus:border-blue-600"
               : sendableEmail
@@ -84,7 +84,7 @@ export default function ContactForm() {
             setSubject(e.target.value);
           }}
           placeholder="Subject"
-          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] border-2 box-border rounded-md text-black focus:outline-none ${
+          className={`w-[80%] h-[80%] pl-[10px] placeholder:text-[#666666] bg-[#cccccc] text-[14px] sm:text-[18px] lg:text-[23px] border-2 box-border rounded-md text-black focus:outline-none ${
             initial
               ? "border-[#888888] focus:border-blue-600"
               : sendableSubject
@@ -93,7 +93,7 @@ export default function ContactForm() {
           }`}
         />
       </div>
-      <div className="w-full h-[40%] flex justify-center items-center p-[2%] overflow-hidden">
+      <div className="w-full h-[40%] flex justify-center items-center p-[2%] overflow-hidden text-[14px] sm:text-[18px] lg:text-[23px]">
         <textarea
           value={text}
           onChange={(e) => {
