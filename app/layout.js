@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/nav/Nav";
 import colors from "./colors/colors";
 import NavItems from "@/components/NavItems";
+import { dbConnect } from "@/services/mongo";
 
 export const metadata = {
   title: "Lawrence Amlan",
@@ -15,7 +16,8 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  await dbConnect();
   return (
     <html lang="en">
       <Head>

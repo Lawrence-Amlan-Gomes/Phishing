@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { cache, useEffect, useState } from "react";
+import { registerUser } from "@/app/actions";
 
 export default function ContactForm() {
   const [initial, setInitial] = useState(true);
@@ -31,15 +32,22 @@ export default function ContactForm() {
     }
   }, [email, initial, subject, text]);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (email != "" && subject != "" && text != "") {
       setInitial(true);
       setEmail("");
       setSubject("");
       setText("");
-      setTimeout(() => {
-        alert("Your email has been sent successfully!")
-      }, 100);
+      try{
+        await registerUser({
+          email: email,
+          subject: subject,
+          text: text,
+        });
+        alert("Your email has been sent successfully!");
+      }catch (error){
+        alert("Your message somehow couldn't sent for some technical error!");
+      }
     } else {
       setInitial(false);
       if (email == "") {
@@ -112,7 +120,15 @@ export default function ContactForm() {
       <div className="w-full h-[20%] flex justify-center items-center">
         <button
           onClick={handleSubmit}
-          className={`w-[100px] h-[50%] mb-[3%] ${sendableEmail ? sendableSubject ? sendableText ? "bg-green-700" : "bg-zinc-800" : "bg-zinc-800" : "bg-zinc-800" } rounded-lg font-bold sm:text-[15px] lg:text-[20px] text-slate-200 tracking-wider`}
+          className={`w-[100px] h-[50%] mb-[3%] ${
+            sendableEmail
+              ? sendableSubject
+                ? sendableText
+                  ? "bg-green-700"
+                  : "bg-zinc-800"
+                : "bg-zinc-800"
+              : "bg-zinc-800"
+          } rounded-lg font-bold sm:text-[15px] lg:text-[20px] text-slate-200 tracking-wider`}
         >
           SEND
         </button>
