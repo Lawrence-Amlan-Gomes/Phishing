@@ -13,7 +13,7 @@ export default function HomeHome() {
         className="z-10 w-full h-full flex relative justify-center items-center px-[10%]"
       >
         <div className={`w-full`}>
-          <div className="text-[#eeeeee] font-bold text-center md:pb-[20px] text-[20px] sm:text-[35px] md:text-[40px] lg:text-[50px] xl:text-[65px] 2xl:text-[80px]">
+          <div className="text-[#eeeeee] font-bold text-center md:pb-[20px] text-[25px] sm:text-[35px] md:text-[40px] lg:text-[50px] xl:text-[65px] 2xl:text-[80px]">
             Transform Your Digital Concepts Into Seamless{" "}
             <span className={`${colors.keyText}`}>User Experiences</span>
           </div>
