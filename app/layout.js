@@ -28,13 +28,20 @@ export default async function RootLayout({ children }) {
           content="width=device-width, initial-scale=1.0"
         />
       </Head>
-      <body className={`${colors.bg} w-screen h-screen overflow-hidden relative`}>
+      <body
+        className={`${colors.bg} w-screen h-screen overflow-hidden relative`}
+      >
         <div className="w-full h-[10%] overflow-hidden relative">
           <Nav />
         </div>
-        <div className="w-full sm:h-[90%] h-[80%] overflow-hidden relative">{children}</div>
-        <div className="w-full sm:h-0 sm:w-0 h-[10%] opacity-100 sm:opacity-0 absolute bottom-0">
-          <MobileNav/>
+        <div className="w-full sm:h-0 sm:w-0 h-[10%] opacity-100 sm:opacity-0 relative">
+          <MobileNav />
+        </div>
+        <div className="w-full sm:h-[90%] h-[70%] overflow-hidden relative">
+          {children}
+        </div>
+        <div className="w-full sm:h-0 sm:w-0 border-[#222222] text-[#dddddd] text-[11px] flex justify-center items-center border-t-[1px] h-[10%] opacity-100 sm:opacity-0 relative">
+          Lawrence Amlan Gomes
         </div>
       </body>
     </html>
