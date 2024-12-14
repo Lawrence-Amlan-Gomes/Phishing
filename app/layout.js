@@ -23,7 +23,7 @@ export default async function RootLayout({ children }) {
         <link rel="icon" href="/icon.png" />
       </Head>
       <body
-        className={`${colors.bg} w-screen h-screen sm:overflow-hidden sm:relative`}
+        className={`${colors.bg} w-screen h-screen overflow-hidden relative`}
       >
         <div className="w-full h-[10%] relative">
           <Nav />
