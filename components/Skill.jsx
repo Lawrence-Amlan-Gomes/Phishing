@@ -11,9 +11,11 @@ import Mongodb from "../public/Mongodb.png";
 import TailwindCss from "../public/TailwindCss.png";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
+import MobileNav from "./MoblileNav";
 export default function Skill() {
   return (
-      <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full overflow-hidden">
+      <div className="w-full sm:h-full h-[90%]">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{
@@ -92,5 +94,9 @@ export default function Skill() {
           />
         </motion.div>
       </div>
+      <div className="w-full h-[10%] opacity-100 sm:w-0 sm:h-0 sm:opacity-0 sm:hidden visible">
+        <MobileNav />
+      </div>
+    </div>
   );
 }
