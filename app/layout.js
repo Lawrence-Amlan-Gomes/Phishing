@@ -23,13 +23,13 @@ export default async function RootLayout({ children }) {
         <link rel="icon" href="/icon.png" />
       </Head>
       <body
-        className={`${colors.bg} w-screen h-screen overflow-hidden relative`}
+        className={`${colors.bg} w-screen h-screen relative`}
       >
         <div className="w-full h-[10%] relative">
           <Nav />
         </div>
         <div className="w-full sm:h-[90%] h-[80%] relative">{children}</div>
-        <div className="w-full h-[10%] block sm:hidden relative">
+        <div className="w-full min-h-[10%] block sm:hidden relative">
           <MobileNav />
         </div>
       </body>
