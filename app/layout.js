@@ -29,7 +29,7 @@ export default async function RootLayout({ children }) {
           <Nav />
         </div>
         <div className="w-full sm:h-[90%] h-[80%] relative">{children}</div>
-        <div className="w-full h-[10%] opacity-100 sm:w-0 sm:h-0 sm:opacity-0 relative">
+        <div className="w-full h-[10%] block sm:hidden relative">
           <MobileNav />
         </div>
       </body>
