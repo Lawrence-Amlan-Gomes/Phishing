@@ -10,7 +10,7 @@ import P5Pic from "../public/P5pic.png";
 import P6Pic from "../public/P6pic.png";
 import P7Pic from "../public/P7pic.png";
 import P8Pic from "../public/P8pic.png";
-import P9Pic from "../public/P9pic.png";
+import P9Pic from "../public/P9Pic.png";
 import Person from "../public/Person.png";
 import Coder from "../public/Coder.png";
 import TimeZone from "../public/TimeZone.png";

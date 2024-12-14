@@ -10,7 +10,7 @@ import P5Pic from "../public/P5pic.png";
 import P6Pic from "../public/P6pic.png";
 import P7Pic from "../public/P7pic.png";
 import P8Pic from "../public/P8pic.png";
-import P9Pic from "../public/P9pic.png";
+import P9Pic from "../public/P9Pic.png";
 // import P8Pic from "../public/p8pic.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useRef, useState } from "react";
