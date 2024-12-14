@@ -18,12 +18,12 @@ export default function About() {
         scale: 1,
       }}
       transition={{ duration: 1, type: "spring" }}
-      className="w-full sm:h-[90%] h-[80%] overflow-y-auto overflow-x-hidden"
+      className="w-full h-full overflow-y-auto overflow-x-hidden"
     >
       <div className="w-full h-[20%] font-bold text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] text-blue-600 tracking-wider flex justify-center items-center">
         Know Me More
       </div>
-      <div className="w-full sm:h-[70%] h-[80%] p-[1%]">
+      <div className="w-full h-[80%] p-[1%]">
         <div className={`sm:h-[100%] sm:w-[30%] w-0 h-0 opacity-0 sm:opacity-100 sm:ml-0 sm:mr-0  ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} relative border-[1px] overflow-hidden rounded-3xl float-left`}>
           <Image
             src={Pic}

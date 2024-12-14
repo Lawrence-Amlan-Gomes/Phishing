@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 export default function Skill() {
   return (
-      <div className="w-full sm:h-full h-[80%] overflow-hidden">
+      <div className="w-full h-full overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{
@@ -32,7 +32,7 @@ export default function Skill() {
             y: 0,
             transition: { duration: 0.5 },
           }}
-          className="w-full sm:h-[70%] h-[80%] p-[1%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black"
+          className="w-full h-[80%] p-[1%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black"
         >
           <SkillCard
             img={Html}

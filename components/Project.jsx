@@ -19,7 +19,7 @@ import AboutCard from "./AboutCard";
 import SingleProject from "./SingleProject";
 export default function Project() {
   return (
-    <div className="w-full sm:h-full h-[80%] overflow-hidden">
+    <div className="w-full h-full overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{
@@ -38,7 +38,7 @@ export default function Project() {
           y: 0,
           transition: { duration: 0.5 },
         }}
-        className="w-full p-[1%] sm:h-[70%] h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-[#000000]"
+        className="w-full p-[1%] h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-[#000000]"
       >
         <SingleProject
           pic={P1Pic}

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import EduCard from "./EduCard";
 export default function Education() {
   return (
-      <div className="w-full sm:h-full h-[80%] overflow-hidden">
+      <div className="w-full h-full overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{
@@ -27,7 +27,7 @@ export default function Education() {
             y: 0,
             transition: { duration: 0.5 },
           }}
-          className="w-full sm:h-[70%] h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black"
+          className="w-full h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black"
         >
           <EduCard
             img={Bracu}
