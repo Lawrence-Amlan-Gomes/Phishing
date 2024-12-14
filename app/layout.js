@@ -20,7 +20,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/icon.png" name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       <body
         className={`${colors.bg} w-screen h-screen relative`}
