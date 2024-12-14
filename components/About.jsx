@@ -18,7 +18,7 @@ export default function About() {
         scale: 1,
       }}
       transition={{ duration: 1, type: "spring" }}
-      className="w-full sm:h-[100%] h-[80%] overflow-y-auto overflow-x-hidden"
+      className="w-full sm:h-[90%] h-[80%] overflow-y-auto overflow-x-hidden"
     >
       <div className="w-full h-[20%] font-bold text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px] text-blue-600 tracking-wider flex justify-center items-center">
         Know Me More

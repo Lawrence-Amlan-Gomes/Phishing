@@ -11,8 +11,7 @@ export default function Nav() {
             <Image src={Logo} alt="Logo" width={50} height={0} />
           </Link>
         </div>
-
-        <div className="sm:flex items-center justify-center w-[80%] relative h-full sm:visible hidden">
+        <div className="flex items-center justify-center sm:w-[80%] relative sm:h-full sm:opacity-100 h-0 w-0 opacity-0">
           <NavItems linkTo="/project" text="Projects" />
           <NavItems linkTo="/about" text="About" />
           <NavItems linkTo="/skill" text="Skill" />
