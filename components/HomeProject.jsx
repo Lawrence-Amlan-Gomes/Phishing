@@ -9,6 +9,8 @@ import P4Pic from "../public/P4pic.png";
 import P5Pic from "../public/P5pic.png";
 import P6Pic from "../public/P6pic.png";
 import P7Pic from "../public/P7pic.png";
+import P8Pic from "../public/P8pic.png";
+import P9Pic from "../public/P9pic.png";
 // import P8Pic from "../public/p8pic.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useRef, useState } from "react";
@@ -20,16 +22,14 @@ export default function HomeProject() {
     <>
       <div className="w-full relative">
         <Link href="/about">
-          <div
-            className="z-10 w-full py-[50px] float-left flex relative justify-center items-center text-[25px] sm:text-[35px] md:text-[45px] lg:text-[60px] xl:text-[65px] 2xl:text-[70px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]"
-          >
+          <div className="z-10 w-full py-[50px] float-left flex relative justify-center items-center text-[25px] sm:text-[35px] md:text-[45px] lg:text-[60px] xl:text-[65px] 2xl:text-[70px] text-blue-600 font-bold text-center tracking-wider lg:leading-[80px]">
             PROJECTS
           </div>
         </Link>
       </div>
-      <div
-        className="w-full relative overflow-hidden p-[1%] mb-[40px]"
-      >
+      <div className="w-full relative overflow-hidden p-[1%] mb-[40px]">
+        <HomeProjectCard img={P9Pic} title={"Time Track"} year={"Nov 2024"} />
+        <HomeProjectCard img={P8Pic} title={"Eshan Agro"} year={"Oct 2024"} />
         <HomeProjectCard img={P1Pic} title={"Cafeteria"} year={"June 2024"} />
         <HomeProjectCard img={P6Pic} title={"Guest Book"} year={"June 2024"} />
         <HomeProjectCard

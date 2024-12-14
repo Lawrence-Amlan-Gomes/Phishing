@@ -9,9 +9,10 @@ import HomeEduCard from "./HomeEduCard";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 import colors from "@/app/colors/colors";
+import ContactBox from "./ContactBox";
 export default function Contact() {
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full overflow-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black">
       <motion.div
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{
@@ -30,44 +31,47 @@ export default function Contact() {
           y: 0,
           transition: { duration: 0.5 },
         }}
-        className="w-full h-[80%] relative overflow-y-auto scrollbar-none flex justify-center items-center"
+        className="w-full sm:h-[800px] h-[600px] relative overflow-hidden flex justify-center items-center"
       >
-        <motion.div
-          initial={{ scale: 1 }}
-          whileHover={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring" }}
-          className={`h-[90%] sm:m-[2%] m-[1%] sm:w-[10%] w-[28%] float-left border-[1px] ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard} rounded-xl`}
-        >
-          <div className="w-[80%] ml-[10%] h-[80%]">
-            <ContactCard
-              img={Gmail}
-              livelink={
-                "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftLmbMDDfmnMzMrFdjCZjvzPgpPhCSkXwkJSljNbNGzttgqJKwpZQqHGFrWBqzlXxjTNV"
-              }
-            />
-            <ContactCard
-              img={GitHub}
-              livelink={"https://github.com/Lawrence-Amlan-Gomes"}
-            />
-            <ContactCard
-              img={LinkedIn}
-              livelink={
-                "https://www.linkedin.com/in/lawrence-amlan-gomes-13847426b/"
-              }
-            />
+        <div className="h-full">
+          <div className="h-full float-left sm:mr-[15px] mr-[5px]">
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring" }}
+              className={`sm:h-[400px] bg-[#0f0f0f] sm:w-[100px] h-[250px] w-[50px] rounded-xl`}
+            >
+              <div className="w-[80%] ml-[10%] h-[80%]">
+                <ContactCard
+                  img={Gmail}
+                  livelink={
+                    "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftLmbMDDfmnMzMrFdjCZjvzPgpPhCSkXwkJSljNbNGzttgqJKwpZQqHGFrWBqzlXxjTNV"
+                  }
+                />
+                <ContactCard
+                  img={GitHub}
+                  livelink={"https://github.com/Lawrence-Amlan-Gomes"}
+                />
+                <ContactCard
+                  img={LinkedIn}
+                  livelink={
+                    "https://www.linkedin.com/in/lawrence-amlan-gomes-13847426b/"
+                  }
+                />
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ scale: 1 }}
-          whileHover={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring" }}
-          className={`h-[90%] sm:m-[2%] sm:w-[40%] m-[1%] w-[78%] float-left border-[1px] relative rounded-xl ${colors.cardBorder} ${colors.cardHoverBorder} ${colors.bgCard}`}
-        >
-          <div className="w-full tracking-wider text-white h-[20%] pt-[1%] flex justify-center items-center text-center font-bold text-[17px] sm:text-[20px] lg:text-[23px]">
-            Direct Message
+          <div className="h-full float-left sm:ml-[15px] ml-[5px]">
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring" }}
+              className={`h-full w-full bg-[#0f0f0f] relative rounded-xl`}
+            >
+              <ContactBox />
+            </motion.div>
           </div>
-          <ContactForm />
-        </motion.div>
+        </div>
       </motion.div>
     </div>
   );

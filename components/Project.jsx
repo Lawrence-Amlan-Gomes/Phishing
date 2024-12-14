@@ -9,6 +9,8 @@ import P4Pic from "../public/P4pic.png";
 import P5Pic from "../public/P5pic.png";
 import P6Pic from "../public/P6pic.png";
 import P7Pic from "../public/P7pic.png";
+import P8Pic from "../public/P8pic.png";
+import P9Pic from "../public/P9pic.png";
 import Person from "../public/Person.png";
 import Coder from "../public/Coder.png";
 import TimeZone from "../public/TimeZone.png";
@@ -39,6 +41,22 @@ export default function Project() {
         }}
         className="w-full p-[1%] h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-[#000000]"
       >
+        <SingleProject
+          pic={P9Pic}
+          title={"Time Track"}
+          text={
+            "This is a full stack Next JS website for daily routine time management system built in Octobor 2024."
+          }
+          livelink={"https://timetrack-ten.vercel.app/"}
+        />
+        <SingleProject
+          pic={P8Pic}
+          title={"Eshan Agro"}
+          text={
+            "This is a frontend Next JS website for a Client for a ecommerce shop built in Octobor 2024."
+          }
+          livelink={"https://ehsanagrobd.com/"}
+        />
         <SingleProject
           pic={P1Pic}
           title={"Cafeteria"}
