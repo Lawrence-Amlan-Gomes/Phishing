@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/nav/Nav";
 import colors from "./colors/colors";
 import { dbConnect } from "@/services/mongo";
+import MobileNav from "@/components/MoblileNav";
 
 export const metadata = {
   title: "Lawrence Amlan",
@@ -31,7 +32,10 @@ export default async function RootLayout({ children }) {
         <div className="w-full h-[10%] overflow-hidden relative">
           <Nav />
         </div>
-        <div className="w-full h-[90%] overflow-hidden relative">{children}</div>
+        <div className="w-full sm:h-[90%] h-[80%] overflow-hidden relative">{children}</div>
+        <div className="w-full sm:h-0 sm:w-0 h-[10%] opacity-100 sm:opacity-0 absolute bottom-0">
+          <MobileNav/>
+        </div>
       </body>
     </html>
   );
