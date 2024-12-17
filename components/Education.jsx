@@ -51,7 +51,7 @@ export default function Education() {
           title={"HTML"}
           livelink={"https://ndc.edu.bd/"}
         />
-        <EduCard
+        {/* <EduCard
           img={HolyCross}
           des={
             "I have completed my Secondary School Certificate from Bandura Holycross Scholl And College. I was also a member of Chess Club, Science Club, Math Club, Computer Club and Cultural Club as well. "
@@ -61,7 +61,7 @@ export default function Education() {
           year={"( 2022 - 2025 )"}
           title={"HTML"}
           livelink={"https://www.facebook.com/BHCSC1912/"}
-        />
+        /> */}
       </motion.div>
     </div>
   );

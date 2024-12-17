@@ -46,13 +46,13 @@ export default function HomeEducation() {
           year={"( 2018 - 2020 )"}
           title={"HTML"}
         />
-        <HomeEduCard
+        {/* <HomeEduCard
           img={HolyCross}
           degree={"Secondary School Certificate"}
           uni={"BANDURA HOLYCROSS SCHOOL AND COLLEGE"}
           year={"( 2014 - 2018 )"}
           title={"HTML"}
-        />
+        /> */}
       </div>
       <LineAnimate />
     </>
