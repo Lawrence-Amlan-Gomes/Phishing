@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import EachField from "./EachField";
-import { registerUser } from "@/app/actions";
+// import { registerUser } from "@/app/actions";
 import EachTextArea from "./EachTextArea";
 
 const ContactBox = () => {
@@ -72,11 +72,11 @@ const ContactBox = () => {
     if (noError) {
       try {
         setIsLoading(true);
-        await registerUser({
-          email: email,
-          subject: subject,
-          text: text,
-        });
+        // await registerUser({
+        //   email: email,
+        //   subject: subject,
+        //   text: text,
+        // });
         setIsLoading(false);
         alert("Your email has been sent successfully!");
         setEmail("")
@@ -88,10 +88,10 @@ const ContactBox = () => {
     }
   };
   return (
-    <div className="h-full w-full flex justify-left items-start bg-black text-[#ebebeb] rounded-xl relative">
-      <div className="sm:p-10 p-5 rounded-lg sm:w-[400px] w-[250px] text-center shadow-lg bg-[#0f0f0f] text-[#f0f0f0]">
+    // <div className="h-full w-full flex justify-left items-start bg-black text-[#ebebeb] rounded-xl relative">
+      <div className="sm:p-10 p-5 border-[1px] border-[#333333] rounded-lg sm:h-[650px] sm:w-[410px] w-[250px] text-center shadow-lg bg-[#0f0f0f] text-[#f0f0f0]">
         <div className="lg:text-[30px] sm:text-[25px] text-[16px] font-bold sm:mb-10 mb-5 ">
-          Direct Message Me
+          Direct Message Us
         </div>
         {/* Trick the browser with this fake email and subject field */}
         <div className="opacity-0">
@@ -168,7 +168,7 @@ const ContactBox = () => {
           </Link>
         </p> */}
       </div>
-    </div>
+    // </div>
   );
 };
 

@@ -1,14 +1,21 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
-import Nav from "@/components/nav/Nav";
 import colors from "./colors/colors";
 import { dbConnect } from "@/services/mongo";
-import MobileNav from "@/components/MoblileNav";
+import WorkProvider from "./providers/WorkProvider";
+
+// Importing Roboto font
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // Choose font weights you need
+  variable: "--font-roboto", // Custom CSS variable name
+});
 
 export const metadata = {
-  title: "Lawrence Amlan",
-  description: "Personal Portfolio",
+  title: "Our Agency | We Develop Web Apps",
+  description:
+    "Our Agency is a digital agency that specializes in web development, design, and marketing.",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
@@ -19,7 +26,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   await dbConnect();
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.variable}> {/* Apply font variable */}
       <Head>
         <link
           rel="icon"
@@ -28,21 +35,10 @@ export default async function RootLayout({ children }) {
           content="width=device-width, initial-scale=1.0"
         />
       </Head>
-      <body
-        className={`${colors.bg} w-screen h-screen overflow-hidden relative`}
-      >
-        <div className="sm:w-full sm:h-[10%] h-0 w-0 overflow-hidden relative">
-          <Nav />
-        </div>
-        <div className="w-full sm:h-0 sm:w-0 h-[10%] opacity-100 sm:opacity-0 relative">
-          <MobileNav />
-        </div>
-        <div className="w-full sm:h-[90%] h-[80%] overflow-hidden relative">
-          {children}
-        </div>
-        <div className="w-full sm:h-0 sm:w-0 border-[#222222] text-[#dddddd] text-[11px] flex justify-center items-center border-t-[1px] h-[10%] opacity-100 sm:opacity-0 relative">
-          Lawrence Amlan Gomes
-        </div>
+      <body className="w-screen h-screen overflow-hidden relative bg-black font-roboto">
+        <WorkProvider>
+          <div className="relative h-full w-full">{children}</div>
+        </WorkProvider>
       </body>
     </html>
   );
