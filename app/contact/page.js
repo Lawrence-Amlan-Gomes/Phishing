@@ -4,6 +4,7 @@ import BgImage from "/public/bgImg2.png";
 import Image from "next/image";
 import ContactBox from "@/components/ContactBox";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export default function Contact() {
   return (
@@ -22,8 +23,10 @@ export default function Contact() {
         <div className="w-full h-[10%] z-30">
           <Nav />
         </div>
-        <div className="w-full h-[90%] flex justify-center overflow-y-auto">
+        <div className="w-full h-[90%] overflow-y-auto">
             <ContactBox/>
+            <div className="w-full h-[10px] float-left"></div>
+            <Footer/>
         </div>
       </div>
     </>

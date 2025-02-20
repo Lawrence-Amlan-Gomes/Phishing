@@ -88,7 +88,7 @@ const ContactBox = () => {
     }
   };
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center float-left">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{

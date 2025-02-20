@@ -13,9 +13,9 @@ export default function Nav() {
             Our works
           </div>
         </Link>
-        <div className="border-[1px] border-transparent hover:border-[#e8e8e8] px-3 py-1 rounded-full hover:cursor-pointer">
+        {/* <div className="border-[1px] border-transparent hover:border-[#e8e8e8] px-3 py-1 rounded-full hover:cursor-pointer">
           What we do
-        </div>
+        </div> */}
       </div>
       <div className="h-full w-[20%] hover:cursor-pointer float-left flex justify-center items-center text-center sm:text-[20px] font-bold text-[#ffffff]">
         <Link href="/">Agency Name</Link>

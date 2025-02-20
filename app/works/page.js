@@ -4,6 +4,7 @@ import Image from "next/image";
 import BgImage from "/public/bgImg2.png";
 import AllWorks from "@/components/AllWorks";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 
 export default function WorkPage() {
   return (
@@ -33,6 +34,7 @@ export default function WorkPage() {
             OUR PROJECTS
           </motion.div>
           <AllWorks />
+          <Footer/>
         </div>
       </div>
     </>
