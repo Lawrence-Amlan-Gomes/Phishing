@@ -13,7 +13,7 @@ export default function EachWorkName({ work, setHoveredId }) {
       onMouseEnter={() => setHoveredId(work.id)}
       onMouseLeave={() => setHoveredId(null)}
       onClick={()=> router.push(`works/${work.routeName}`)}
-      className="text-white text-center float-left w-full sm:text-[15px] bg-[#282828] border-[#282828] mb-3 py-2 px-3 rounded-xl hover:border-[#ffffff] border-[1px] hover:border-[1px] hover:bg-transparent"
+      className="text-white text-center float-left w-full sm:text-[15px] bg-[#282828] border-[#282828] mb-3 py-2 px-3 rounded-xl hover:border-[#ffffff] border-[1px] hover:border-[1px] hover:bg-transparent hover:cursor-pointer"
     >
       {work.title}
     </div>

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import EachField from "./EachField";
 // import { registerUser } from "@/app/actions";
@@ -79,20 +79,28 @@ const ContactBox = () => {
         // });
         setIsLoading(false);
         alert("Your email has been sent successfully!");
-        setEmail("")
-        setText("")
-        setSubject("")
+        setEmail("");
+        setText("");
+        setSubject("");
       } catch {
         alert("Your message somehow couldn't sent for some technical error!");
       }
     }
   };
   return (
-    // <div className="h-full w-full flex justify-left items-start bg-black text-[#ebebeb] rounded-xl relative">
-      <div className="sm:p-10 p-5 border-[1px] border-[#333333] rounded-lg sm:h-[650px] sm:w-[410px] w-[250px] text-center shadow-lg bg-[#0f0f0f] text-[#f0f0f0]">
-        <div className="lg:text-[30px] sm:text-[25px] text-[16px] font-bold sm:mb-10 mb-5 ">
-          Direct Message Us
-        </div>
+    <div className="w-full h-full flex justify-center items-center">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{ duration: 2, type: "spring" }}
+        className="sm:p-10 p-5 shadow-xl border-[1px] border-transparent hover:border-[#555555] rounded-lg sm:w-[400px] text-center bg-[#181818] text-[#f0f0f0]"
+      >
+        {/* <div className="lg:text-[30px] sm:text-[25px] text-[16px] font-bold sm:mb-10 mb-5 ">
+        Direct Message Us
+      </div> */}
         {/* Trick the browser with this fake email and subject field */}
         <div className="opacity-0">
           <EachField
@@ -145,7 +153,7 @@ const ContactBox = () => {
           type="text"
           subject="text"
           isReal={true}
-          placeholder="Feel free to text me"
+          placeholder="Feel free to text us"
           value={text}
           setValue={setText}
           iserror={textError.iserror}
@@ -156,7 +164,7 @@ const ContactBox = () => {
           className={`sm:text-[18px] text-[14px] cursor-pointer rounded-full sm:mt-10 mt-5 py-2 px-6 shadow-md ${
             noError
               ? "bg-green-800 hover:bg-green-700 text-white"
-              : "bg-[#1a1a1a] text-[#696969]"
+              : "bg-[#111111] text-[#696969]"
           }`}
         >
           {isLoading ? `Sending...` : `Send`}
@@ -167,8 +175,8 @@ const ContactBox = () => {
             Register
           </Link>
         </p> */}
-      </div>
-    // </div>
+      </motion.div>
+    </div>
   );
 };
 

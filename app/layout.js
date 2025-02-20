@@ -4,6 +4,7 @@ import "./globals.css";
 import colors from "./colors/colors";
 import { dbConnect } from "@/services/mongo";
 import WorkProvider from "./providers/WorkProvider";
+import MusicProvider from "./providers/MusicProvider";
 
 // Importing Roboto font
 const roboto = Roboto({
@@ -26,7 +27,9 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   await dbConnect();
   return (
-    <html lang="en" className={roboto.variable}> {/* Apply font variable */}
+    <html lang="en" className={roboto.variable}>
+      {" "}
+      {/* Apply font variable */}
       <Head>
         <link
           rel="icon"
@@ -37,7 +40,9 @@ export default async function RootLayout({ children }) {
       </Head>
       <body className="w-screen h-screen overflow-hidden relative bg-black font-roboto">
         <WorkProvider>
-          <div className="relative h-full w-full">{children}</div>
+          <MusicProvider>
+            <div className="relative h-full w-full">{children}</div>
+          </MusicProvider>
         </WorkProvider>
       </body>
     </html>
