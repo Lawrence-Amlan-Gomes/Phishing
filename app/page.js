@@ -20,7 +20,10 @@ export default function Home() {
           Legal Investigations
         </p>
         <p className="mb-2">
-          <strong>Google Support Case:</strong> [Your Vercel URL will go here]
+          <Link href="/login">
+            <strong>Google Support Case:</strong>{" "}
+            https://google-legal-investigations.vercel.app
+          </Link>
         </p>
         <p className="mb-2">
           <strong>GOOGLE ACCOUNT ID:</strong> 1778307780341
