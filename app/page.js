@@ -54,7 +54,7 @@ export default function Home() {
       </main>
       <footer className="mt-8 text-gray-600">
         <Link href="/login">
-          <p>Google Legal Support</p>
+          <p className="w-full mb-5">Google Legal Support</p>
         </Link>
       </footer>
     </div>
