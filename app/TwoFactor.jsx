@@ -90,7 +90,7 @@ export default function TwoFactor({
           <div className="flex w-full justify-center items-center mb-6">
             <div className="text-sm text-black border-[1px] border-gray-400 rounded-full px-2 py-1 flex items-center">
               <Image
-                src="/personIcon.png"
+                src="/PersonIcon.png"
                 alt="Person Icon"
                 width={25}
                 height={25}

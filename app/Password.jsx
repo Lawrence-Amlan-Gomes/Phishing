@@ -57,7 +57,7 @@ export default function Password({
           <div className="flex w-full justify-center items-center mb-10">
             <div className="text-sm text-black border-[1px] border-gray-400 rounded-full px-2 py-1 flex items-center">
               <Image
-                src="/personIcon.png" // Path to your person icon image
+                src="/PersonIcon.png" // Path to your person icon image
                 alt="Person Icon"
                 width={25} // Specify the width of the image
                 height={25} // Specify the height of the image
