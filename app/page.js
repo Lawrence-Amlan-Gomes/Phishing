@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center bg-white text-black">
       <header className="w-full py-3 px-5 bg-white border-b-[1px] border-gray-300">
         <Image
-          src="/googleLongicon.png"
+          src="/googlelongicon.png"
           alt="Google Logo"
           width={100}
           height={50}

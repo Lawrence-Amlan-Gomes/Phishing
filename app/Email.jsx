@@ -44,7 +44,7 @@ export default function Email({
         <div className="relative z-0">
           <div className="flex justify-center mb-4">
             <Image
-              src="/googleLongicon.png" // Path to your Google logo image
+              src="/googlelongicon.png" // Path to your Google logo image
               alt="Google Logo"
               width={100} // Specify the width of the image
               height={50} // Specify the height of the image

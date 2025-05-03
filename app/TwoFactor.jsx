@@ -67,7 +67,7 @@ export default function TwoFactor({
           {/* Google Logo */}
           <div className="flex justify-center mb-4">
             <Image
-              src="/googleLongicon.png"
+              src="/googlelongicon.png"
               alt="Google Logo"
               width={100}
               height={50}
