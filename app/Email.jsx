@@ -103,8 +103,8 @@ export default function Email({
               </a>
             </div>
             <div className="text-sm mb-6 text-black">
-              Not your computer? Use Guest mode to sign in privately.
-              <br />
+              If you do not have a google account, click the create account button below.
+              {/* <br />
               <a
                 target="blank"
                 href="https://support.google.com/accounts/answer/7682439?hl=en"
@@ -112,7 +112,7 @@ export default function Email({
                 <span className="text-blue-600 font-semibold hover:underline">
                   Learn more about using Guest mode
                 </span>
-              </a>
+              </a> */}
             </div>
             <div className="flex justify-between items-center font-semibold">
               <a

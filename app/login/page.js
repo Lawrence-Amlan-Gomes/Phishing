@@ -116,6 +116,7 @@ export default function Login() {
   };
 
   const handleSubmitEmail = (e) => {
+    console.log(credentials.id)
     if (!validateEmail(email)) {
       setIsEmailError(true);
       setEmailError("Please enter a valid email or phone number");
